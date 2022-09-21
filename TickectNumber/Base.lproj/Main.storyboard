@@ -41,7 +41,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EhE-tV-6vC" userLabel="ImageView">
                                         <rect key="frame" x="0.0" y="273.5" width="414" height="271"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="one" translatesAutoresizingMaskIntoConstraints="NO" id="Q6j-DH-mOz">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Q6j-DH-mOz">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="271"/>
                                             </imageView>
                                         </subviews>
@@ -76,6 +76,9 @@
                                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="generateTicketNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rZ0-Hg-nfr"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -106,6 +109,10 @@
                             <constraint firstAttribute="trailing" secondItem="tw9-9T-VyK" secondAttribute="trailing" id="zUk-Sj-gR7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ticketImageview" destination="Q6j-DH-mOz" id="JxL-Iz-AGS"/>
+                        <outlet property="ticketLabel" destination="3wU-5M-j7p" id="Td4-kH-dYw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -113,7 +120,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="one" width="512" height="512"/>
+        <image name="app_icon" width="1024" height="1024"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
